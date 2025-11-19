@@ -1,33 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar Sesión – Centro Digital Natagaima</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Login - Centro Digital Natagaima</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
 
-<header>
+<div class="container">
     <h1>Iniciar Sesión</h1>
-</header>
 
-<section class="contenedor">
+    <div class="card">
 
-    <form onsubmit="login(event)">
-        <input type="text" id="user" placeholder="Usuario" required>
-        <input type="password" id="pass" placeholder="Contraseña" required>
-        <button type="submit" class="btn">Ingresar</button>
-    </form>
+        <p><strong>Ingrese sus datos para continuar</strong></p>
 
-</section>
+        <a class="btn" href="panel.html">Ingresar</a>
+        <a class="btn" href="index.html">Volver</a>
 
-<a class="btn" href="index.html">Volver</a>
-
-<footer>
-    <p>© 2025 Centro Digital Natagaima</p>
-</footer>
-
-<script src="js/main.js"></script>
+    </div>
+</div>
 
 </body>
 </html>
