@@ -53,30 +53,28 @@ h1, h2 {
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
-/* --- Formularios organizados uno debajo del otro --- */
-form {
+/* --- Corrección para formularios dentro de .card --- */
+.card form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espacio entre los elementos */
-    text-align: left;
+    align-items: stretch;
     width: 100%;
+    text-align: left; /* IMPORTANTE */
 }
 
-label {
+.card label {
+    margin-top: 10px;
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
-input {
+.card input {
     padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
 }
 
-/* Botón dentro del form a ancho completo */
-form .btn {
+.card form .btn {
+    margin-top: 15px;
     width: 100%;
-    text-align: center;
-    margin-top: 10px;
 }
